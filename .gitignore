@@ -70,3 +70,661 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Dreamteck.meta
+Assets/Dreamteck/Splines.meta
+Assets/Dreamteck/Utilities.meta
+Assets/Dreamteck/Splines/Components.meta
+Assets/Dreamteck/Splines/Core.meta
+Assets/Dreamteck/Splines/Dreamteck.Splines.asmdef
+Assets/Dreamteck/Splines/Dreamteck.Splines.asmdef.meta
+Assets/Dreamteck/Splines/Editor.meta
+Assets/Dreamteck/Splines/Examples.meta
+Assets/Dreamteck/Splines/Examples.unitypackage.meta
+Assets/Dreamteck/Splines/PlaymakerActions.unitypackage.meta
+Assets/Dreamteck/Splines/Presets.meta
+Assets/Dreamteck/Splines/TMPro.unitypackage.meta
+Assets/Dreamteck/Splines/User Manual.url
+Assets/Dreamteck/Splines/User Manual.url.meta
+Assets/Dreamteck/Splines/Components/BlankUser.cs
+Assets/Dreamteck/Splines/Components/BlankUser.cs.meta
+Assets/Dreamteck/Splines/Components/EdgeColliderGenerator.cs
+Assets/Dreamteck/Splines/Components/EdgeColliderGenerator.cs.meta
+Assets/Dreamteck/Splines/Components/Icons.meta
+Assets/Dreamteck/Splines/Components/LengthCalculator.cs
+Assets/Dreamteck/Splines/Components/LengthCalculator.cs.meta
+Assets/Dreamteck/Splines/Components/MeshGenerator.cs
+Assets/Dreamteck/Splines/Components/MeshGenerator.cs.meta
+Assets/Dreamteck/Splines/Components/Node.cs
+Assets/Dreamteck/Splines/Components/Node.cs.meta
+Assets/Dreamteck/Splines/Components/ObjectBender.cs
+Assets/Dreamteck/Splines/Components/ObjectBender.cs.meta
+Assets/Dreamteck/Splines/Components/ObjectController CustomRules.meta
+Assets/Dreamteck/Splines/Components/ObjectController.cs
+Assets/Dreamteck/Splines/Components/ObjectController.cs.meta
+Assets/Dreamteck/Splines/Components/ParticleController.cs
+Assets/Dreamteck/Splines/Components/ParticleController.cs.meta
+Assets/Dreamteck/Splines/Components/PathGenerator.cs
+Assets/Dreamteck/Splines/Components/PathGenerator.cs.meta
+Assets/Dreamteck/Splines/Components/PolygonColliderGenerator.cs
+Assets/Dreamteck/Splines/Components/PolygonColliderGenerator.cs.meta
+Assets/Dreamteck/Splines/Components/Sample Modifiers.meta
+Assets/Dreamteck/Splines/Components/SplineComputer.cs
+Assets/Dreamteck/Splines/Components/SplineComputer.cs.meta
+Assets/Dreamteck/Splines/Components/SplineFollower.cs
+Assets/Dreamteck/Splines/Components/SplineFollower.cs.meta
+Assets/Dreamteck/Splines/Components/SplineMesh.cs
+Assets/Dreamteck/Splines/Components/SplineMesh.cs.meta
+Assets/Dreamteck/Splines/Components/SplineMeshChannel.cs
+Assets/Dreamteck/Splines/Components/SplineMeshChannel.cs.meta
+Assets/Dreamteck/Splines/Components/SplineMorph.cs
+Assets/Dreamteck/Splines/Components/SplineMorph.cs.meta
+Assets/Dreamteck/Splines/Components/SplinePositioner.cs
+Assets/Dreamteck/Splines/Components/SplinePositioner.cs.meta
+Assets/Dreamteck/Splines/Components/SplineProjector.cs
+Assets/Dreamteck/Splines/Components/SplineProjector.cs.meta
+Assets/Dreamteck/Splines/Components/SplineRenderer.cs
+Assets/Dreamteck/Splines/Components/SplineRenderer.cs.meta
+Assets/Dreamteck/Splines/Components/SplineTracer.cs
+Assets/Dreamteck/Splines/Components/SplineTracer.cs.meta
+Assets/Dreamteck/Splines/Components/SplineUser.cs
+Assets/Dreamteck/Splines/Components/SplineUser.cs.meta
+Assets/Dreamteck/Splines/Components/SurfaceGenerator.cs
+Assets/Dreamteck/Splines/Components/SurfaceGenerator.cs.meta
+Assets/Dreamteck/Splines/Components/TubeGenerator.cs
+Assets/Dreamteck/Splines/Components/TubeGenerator.cs.meta
+Assets/Dreamteck/Splines/Components/WaveformGenerator.cs
+Assets/Dreamteck/Splines/Components/WaveformGenerator.cs.meta
+Assets/Dreamteck/Splines/Components/Icons/EdgeColliderGenerator.png
+Assets/Dreamteck/Splines/Components/Icons/EdgeColliderGenerator.png.meta
+Assets/Dreamteck/Splines/Components/Icons/LengthCalculator.png
+Assets/Dreamteck/Splines/Components/Icons/LengthCalculator.png.meta
+Assets/Dreamteck/Splines/Components/Icons/NodeIcon.png
+Assets/Dreamteck/Splines/Components/Icons/NodeIcon.png.meta
+Assets/Dreamteck/Splines/Components/Icons/ObjectBender.png
+Assets/Dreamteck/Splines/Components/Icons/ObjectBender.png.meta
+Assets/Dreamteck/Splines/Components/Icons/ObjectController.png
+Assets/Dreamteck/Splines/Components/Icons/ObjectController.png.meta
+Assets/Dreamteck/Splines/Components/Icons/ObjectControllerCustomRule.png
+Assets/Dreamteck/Splines/Components/Icons/ObjectControllerCustomRule.png.meta
+Assets/Dreamteck/Splines/Components/Icons/ParticleController.png
+Assets/Dreamteck/Splines/Components/Icons/ParticleController.png.meta
+Assets/Dreamteck/Splines/Components/Icons/PathGenerator.png
+Assets/Dreamteck/Splines/Components/Icons/PathGenerator.png.meta
+Assets/Dreamteck/Splines/Components/Icons/PolygonColliderGenerator.png
+Assets/Dreamteck/Splines/Components/Icons/PolygonColliderGenerator.png.meta
+Assets/Dreamteck/Splines/Components/Icons/SplineComputer.png
+Assets/Dreamteck/Splines/Components/Icons/SplineComputer.png.meta
+Assets/Dreamteck/Splines/Components/Icons/SplineFollower.png
+Assets/Dreamteck/Splines/Components/Icons/SplineFollower.png.meta
+Assets/Dreamteck/Splines/Components/Icons/SplineMesh.png
+Assets/Dreamteck/Splines/Components/Icons/SplineMesh.png.meta
+Assets/Dreamteck/Splines/Components/Icons/SplineMorph.png
+Assets/Dreamteck/Splines/Components/Icons/SplineMorph.png.meta
+Assets/Dreamteck/Splines/Components/Icons/SplinePositioner.png
+Assets/Dreamteck/Splines/Components/Icons/SplinePositioner.png.meta
+Assets/Dreamteck/Splines/Components/Icons/SplineProjector.png
+Assets/Dreamteck/Splines/Components/Icons/SplineProjector.png.meta
+Assets/Dreamteck/Splines/Components/Icons/SplineRenderer.png
+Assets/Dreamteck/Splines/Components/Icons/SplineRenderer.png.meta
+Assets/Dreamteck/Splines/Components/Icons/SplineUser.png
+Assets/Dreamteck/Splines/Components/Icons/SplineUser.png.meta
+Assets/Dreamteck/Splines/Components/Icons/SurfaceGenerator.png
+Assets/Dreamteck/Splines/Components/Icons/SurfaceGenerator.png.meta
+Assets/Dreamteck/Splines/Components/Icons/TubeGenerator.png
+Assets/Dreamteck/Splines/Components/Icons/TubeGenerator.png.meta
+Assets/Dreamteck/Splines/Components/Icons/WaveformGenerator.png
+Assets/Dreamteck/Splines/Components/Icons/WaveformGenerator.png.meta
+Assets/Dreamteck/Splines/Components/ObjectController CustomRules/Classes.meta
+Assets/Dreamteck/Splines/Components/ObjectController CustomRules/Sine Rule.asset
+Assets/Dreamteck/Splines/Components/ObjectController CustomRules/Sine Rule.asset.meta
+Assets/Dreamteck/Splines/Components/ObjectController CustomRules/Spiral Rule.asset
+Assets/Dreamteck/Splines/Components/ObjectController CustomRules/Spiral Rule.asset.meta
+Assets/Dreamteck/Splines/Components/ObjectController CustomRules/Classes/ObjectControllerCustomRuleBase.cs
+Assets/Dreamteck/Splines/Components/ObjectController CustomRules/Classes/ObjectControllerCustomRuleBase.cs.meta
+Assets/Dreamteck/Splines/Components/ObjectController CustomRules/Classes/ObjectControllerSineRule.cs
+Assets/Dreamteck/Splines/Components/ObjectController CustomRules/Classes/ObjectControllerSineRule.cs.meta
+Assets/Dreamteck/Splines/Components/ObjectController CustomRules/Classes/ObjectControllerSpiralRule.cs
+Assets/Dreamteck/Splines/Components/ObjectController CustomRules/Classes/ObjectControllerSpiralRule.cs.meta
+Assets/Dreamteck/Splines/Components/Sample Modifiers/ColorModifier.cs
+Assets/Dreamteck/Splines/Components/Sample Modifiers/ColorModifier.cs.meta
+Assets/Dreamteck/Splines/Components/Sample Modifiers/FollowerSpeedModifier.cs
+Assets/Dreamteck/Splines/Components/Sample Modifiers/FollowerSpeedModifier.cs.meta
+Assets/Dreamteck/Splines/Components/Sample Modifiers/MeshScaleModifier.cs
+Assets/Dreamteck/Splines/Components/Sample Modifiers/MeshScaleModifier.cs.meta
+Assets/Dreamteck/Splines/Components/Sample Modifiers/OffsetModifier.cs
+Assets/Dreamteck/Splines/Components/Sample Modifiers/OffsetModifier.cs.meta
+Assets/Dreamteck/Splines/Components/Sample Modifiers/RotationModifier.cs
+Assets/Dreamteck/Splines/Components/Sample Modifiers/RotationModifier.cs.meta
+Assets/Dreamteck/Splines/Components/Sample Modifiers/SizeModifier.cs
+Assets/Dreamteck/Splines/Components/Sample Modifiers/SizeModifier.cs.meta
+Assets/Dreamteck/Splines/Components/Sample Modifiers/SplineSampleModifier.cs
+Assets/Dreamteck/Splines/Components/Sample Modifiers/SplineSampleModifier.cs.meta
+Assets/Dreamteck/Splines/Core/IO.meta
+Assets/Dreamteck/Splines/Core/ObjectSequence.cs
+Assets/Dreamteck/Splines/Core/ObjectSequence.cs.meta
+Assets/Dreamteck/Splines/Core/Primitives.meta
+Assets/Dreamteck/Splines/Core/SampleCollection.cs
+Assets/Dreamteck/Splines/Core/SampleCollection.cs.meta
+Assets/Dreamteck/Splines/Core/Spline.cs
+Assets/Dreamteck/Splines/Core/Spline.cs.meta
+Assets/Dreamteck/Splines/Core/SplinePoint.cs
+Assets/Dreamteck/Splines/Core/SplinePoint.cs.meta
+Assets/Dreamteck/Splines/Core/SplinePrefs.cs
+Assets/Dreamteck/Splines/Core/SplinePrefs.cs.meta
+Assets/Dreamteck/Splines/Core/SplineSample.cs
+Assets/Dreamteck/Splines/Core/SplineSample.cs.meta
+Assets/Dreamteck/Splines/Core/SplineThreading.cs
+Assets/Dreamteck/Splines/Core/SplineThreading.cs.meta
+Assets/Dreamteck/Splines/Core/SplineTrigger.cs
+Assets/Dreamteck/Splines/Core/SplineTrigger.cs.meta
+Assets/Dreamteck/Splines/Core/SplineUtility.cs
+Assets/Dreamteck/Splines/Core/SplineUtility.cs.meta
+Assets/Dreamteck/Splines/Core/TransformModule.cs
+Assets/Dreamteck/Splines/Core/TransformModule.cs.meta
+Assets/Dreamteck/Splines/Core/IO/CSV.cs
+Assets/Dreamteck/Splines/Core/IO/CSV.cs.meta
+Assets/Dreamteck/Splines/Core/IO/SplineParser.cs
+Assets/Dreamteck/Splines/Core/IO/SplineParser.cs.meta
+Assets/Dreamteck/Splines/Core/IO/SVG.cs
+Assets/Dreamteck/Splines/Core/IO/SVG.cs.meta
+Assets/Dreamteck/Splines/Core/Primitives/Capsule.cs
+Assets/Dreamteck/Splines/Core/Primitives/Capsule.cs.meta
+Assets/Dreamteck/Splines/Core/Primitives/Ellipse.cs
+Assets/Dreamteck/Splines/Core/Primitives/Ellipse.cs.meta
+Assets/Dreamteck/Splines/Core/Primitives/Line.cs
+Assets/Dreamteck/Splines/Core/Primitives/Line.cs.meta
+Assets/Dreamteck/Splines/Core/Primitives/Ngon.cs
+Assets/Dreamteck/Splines/Core/Primitives/Ngon.cs.meta
+Assets/Dreamteck/Splines/Core/Primitives/Rectangle.cs
+Assets/Dreamteck/Splines/Core/Primitives/Rectangle.cs.meta
+Assets/Dreamteck/Splines/Core/Primitives/RoundedRectangle.cs
+Assets/Dreamteck/Splines/Core/Primitives/RoundedRectangle.cs.meta
+Assets/Dreamteck/Splines/Core/Primitives/Spiral.cs
+Assets/Dreamteck/Splines/Core/Primitives/Spiral.cs.meta
+Assets/Dreamteck/Splines/Core/Primitives/SplinePrimitive.cs
+Assets/Dreamteck/Splines/Core/Primitives/SplinePrimitive.cs.meta
+Assets/Dreamteck/Splines/Core/Primitives/Star.cs
+Assets/Dreamteck/Splines/Core/Primitives/Star.cs.meta
+Assets/Dreamteck/Splines/Editor/changelog.txt
+Assets/Dreamteck/Splines/Editor/changelog.txt.meta
+Assets/Dreamteck/Splines/Editor/Components.meta
+Assets/Dreamteck/Splines/Editor/ComputerSplitModule.cs
+Assets/Dreamteck/Splines/Editor/ComputerSplitModule.cs.meta
+Assets/Dreamteck/Splines/Editor/Dreamteck.Splines.Editor.asmdef
+Assets/Dreamteck/Splines/Editor/Dreamteck.Splines.Editor.asmdef.meta
+Assets/Dreamteck/Splines/Editor/DSSplineDrawer.cs
+Assets/Dreamteck/Splines/Editor/DSSplineDrawer.cs.meta
+Assets/Dreamteck/Splines/Editor/Icons.meta
+Assets/Dreamteck/Splines/Editor/Primitives.meta
+Assets/Dreamteck/Splines/Editor/Sample Modifiers.meta
+Assets/Dreamteck/Splines/Editor/SerializedSplinePoint.cs
+Assets/Dreamteck/Splines/Editor/SerializedSplinePoint.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineComputerEditor.cs
+Assets/Dreamteck/Splines/Editor/SplineComputerEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineComputerEditorHandles.cs
+Assets/Dreamteck/Splines/Editor/SplineComputerEditorHandles.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineDrawer.cs
+Assets/Dreamteck/Splines/Editor/SplineDrawer.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor.meta
+Assets/Dreamteck/Splines/Editor/SplineEditorGUI.cs
+Assets/Dreamteck/Splines/Editor/SplineEditorGUI.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditorHandles.cs
+Assets/Dreamteck/Splines/Editor/SplineEditorHandles.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditorWindow.cs
+Assets/Dreamteck/Splines/Editor/SplineEditorWindow.cs.meta
+Assets/Dreamteck/Splines/Editor/SplinePreset.cs
+Assets/Dreamteck/Splines/Editor/SplinePreset.cs.meta
+Assets/Dreamteck/Splines/Editor/Tools.meta
+Assets/Dreamteck/Splines/Editor/TransformModuleEditor.cs
+Assets/Dreamteck/Splines/Editor/TransformModuleEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/WelcomeScreen.cs
+Assets/Dreamteck/Splines/Editor/WelcomeScreen.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/BakeMeshWindow.cs
+Assets/Dreamteck/Splines/Editor/Components/BakeMeshWindow.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/EdgeColliderGeneratorEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/EdgeColliderGeneratorEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/LengthCalculatorEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/LengthCalculatorEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/MeshGenEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/MeshGenEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/NodeEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/NodeEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/ObjectBenderEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/ObjectBenderEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/ObjectControllerEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/ObjectControllerEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/ParticleControllerEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/ParticleControllerEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/PathGeneratorEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/PathGeneratorEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/PolygonColliderGenEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/PolygonColliderGenEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/SetClipRangeWindow.cs
+Assets/Dreamteck/Splines/Editor/Components/SetClipRangeWindow.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/SetDistanceWindow.cs
+Assets/Dreamteck/Splines/Editor/Components/SetDistanceWindow.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/SplineFollowerEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/SplineFollowerEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/SplineMeshEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/SplineMeshEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/SplineMorphEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/SplineMorphEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/SplinePositionerEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/SplinePositionerEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/SplineProjectorEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/SplineProjectorEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/SplineRendererEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/SplineRendererEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/SplineTracerEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/SplineTracerEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/SplineUserEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/SplineUserEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/SplineUserSubEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/SplineUserSubEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/SurfaceGeneratorEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/SurfaceGeneratorEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/TubeGeneratorEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/TubeGeneratorEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Components/WaveformGeneratorEditor.cs
+Assets/Dreamteck/Splines/Editor/Components/WaveformGeneratorEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Icons/add.png
+Assets/Dreamteck/Splines/Editor/Icons/add.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/add_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/add_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/add_on.png
+Assets/Dreamteck/Splines/Editor/Icons/add_on.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/add_on_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/add_on_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/edit_cursor.png
+Assets/Dreamteck/Splines/Editor/Icons/edit_cursor.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/forever.png
+Assets/Dreamteck/Splines/Editor/Icons/forever.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/merge.png
+Assets/Dreamteck/Splines/Editor/Icons/merge.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/merge_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/merge_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/merge_on.png
+Assets/Dreamteck/Splines/Editor/Icons/merge_on.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/merge_on_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/merge_on_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/mirror.png
+Assets/Dreamteck/Splines/Editor/Icons/mirror.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/mirror_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/mirror_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/mirror_on.png
+Assets/Dreamteck/Splines/Editor/Icons/mirror_on.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/mirror_on_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/mirror_on_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/normal.png
+Assets/Dreamteck/Splines/Editor/Icons/normal.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/normal_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/normal_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/normal_on.png
+Assets/Dreamteck/Splines/Editor/Icons/normal_on.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/normal_on_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/normal_on_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/plugin_header.png
+Assets/Dreamteck/Splines/Editor/Icons/plugin_header.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/primitives.png
+Assets/Dreamteck/Splines/Editor/Icons/primitives.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/primitives_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/primitives_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/primitives_on.png
+Assets/Dreamteck/Splines/Editor/Icons/primitives_on.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/primitives_on_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/primitives_on_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/remove.png
+Assets/Dreamteck/Splines/Editor/Icons/remove.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/remove_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/remove_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/remove_on.png
+Assets/Dreamteck/Splines/Editor/Icons/remove_on.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/remove_on_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/remove_on_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/split.png
+Assets/Dreamteck/Splines/Editor/Icons/split.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/split_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/split_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/split_on.png
+Assets/Dreamteck/Splines/Editor/Icons/split_on.png.meta
+Assets/Dreamteck/Splines/Editor/Icons/split_on_dark.png
+Assets/Dreamteck/Splines/Editor/Icons/split_on_dark.png.meta
+Assets/Dreamteck/Splines/Editor/Primitives/CapsuleEditor.cs
+Assets/Dreamteck/Splines/Editor/Primitives/CapsuleEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Primitives/EllipseEditor.cs
+Assets/Dreamteck/Splines/Editor/Primitives/EllipseEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Primitives/LineEditor.cs
+Assets/Dreamteck/Splines/Editor/Primitives/LineEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Primitives/NgonEditor.cs
+Assets/Dreamteck/Splines/Editor/Primitives/NgonEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Primitives/PrimitiveEditor.cs
+Assets/Dreamteck/Splines/Editor/Primitives/PrimitiveEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Primitives/RectangleEditor.cs
+Assets/Dreamteck/Splines/Editor/Primitives/RectangleEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Primitives/RoundedRectangleEditor.cs
+Assets/Dreamteck/Splines/Editor/Primitives/RoundedRectangleEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Primitives/SpiralEditor.cs
+Assets/Dreamteck/Splines/Editor/Primitives/SpiralEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Primitives/StarEditor.cs
+Assets/Dreamteck/Splines/Editor/Primitives/StarEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/ColorModifierEditor.cs
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/ColorModifierEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/FollowerSpeedModifierEditor.cs
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/FollowerSpeedModifierEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/MeshScaleModifierEditor.cs
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/MeshScaleModifierEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/OffsetModifierEditor.cs
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/OffsetModifierEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/RotationModifierEditor.cs
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/RotationModifierEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/SizeModifierEditor.cs
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/SizeModifierEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/SplineSampleModifierEditor.cs
+Assets/Dreamteck/Splines/Editor/Sample Modifiers/SplineSampleModifierEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/EditorModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/EditorModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/SplineEditor.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/SplineEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/SplineEditorBase.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/SplineEditorBase.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/ComputerEditor.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/ComputerEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/ComputerEditorModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/ComputerEditorModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/ComputerMergeModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/ComputerMergeModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/DreamteckSplinesEditor.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/DreamteckSplinesEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/DSCreatePointModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/DSCreatePointModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/PrimitivesModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/PrimitivesModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/SplineComputerDebugEditor.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/SplineComputerDebugEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/SplineTriggersEditor.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/DS Editor/SplineTriggersEditor.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/CreatePointModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/CreatePointModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/DeletePointModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/DeletePointModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/MainPointModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/MainPointModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointMirrorModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointMirrorModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointMoveModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointMoveModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointNormalModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointNormalModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointRotateModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointRotateModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointScaleModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointScaleModule.cs.meta
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointTransformModule.cs
+Assets/Dreamteck/Splines/Editor/SplineEditor/Point Modules/PointTransformModule.cs.meta
+Assets/Dreamteck/Splines/Editor/Tools/BakeTool.cs
+Assets/Dreamteck/Splines/Editor/Tools/BakeTool.cs.meta
+Assets/Dreamteck/Splines/Editor/Tools/CatenaryTool.cs
+Assets/Dreamteck/Splines/Editor/Tools/CatenaryTool.cs.meta
+Assets/Dreamteck/Splines/Editor/Tools/Explorer.cs
+Assets/Dreamteck/Splines/Editor/Tools/Explorer.cs.meta
+Assets/Dreamteck/Splines/Editor/Tools/ImportTool.cs
+Assets/Dreamteck/Splines/Editor/Tools/ImportTool.cs.meta
+Assets/Dreamteck/Splines/Editor/Tools/LevelTerrainTool.cs
+Assets/Dreamteck/Splines/Editor/Tools/LevelTerrainTool.cs.meta
+Assets/Dreamteck/Splines/Editor/Tools/ObjectSpawnTool.cs
+Assets/Dreamteck/Splines/Editor/Tools/ObjectSpawnTool.cs.meta
+Assets/Dreamteck/Splines/Editor/Tools/SplineTool.cs
+Assets/Dreamteck/Splines/Editor/Tools/SplineTool.cs.meta
+Assets/Dreamteck/Splines/Editor/Tools/SplineToolsWindow.cs
+Assets/Dreamteck/Splines/Editor/Tools/SplineToolsWindow.cs.meta
+Assets/Dreamteck/Splines/Editor/Tools/UpdateTool.cs
+Assets/Dreamteck/Splines/Editor/Tools/UpdateTool.cs.meta
+Assets/Dreamteck/Splines/Examples/AudioVisualization.meta
+Assets/Dreamteck/Splines/Examples/Following.meta
+Assets/Dreamteck/Splines/Examples/Junctions.meta
+Assets/Dreamteck/Splines/Examples/LengthEvents.meta
+Assets/Dreamteck/Splines/Examples/Morphs.meta
+Assets/Dreamteck/Splines/Examples/Particles.meta
+Assets/Dreamteck/Splines/Examples/Projection.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster.meta
+Assets/Dreamteck/Splines/Examples/AudioVisualization/bensound-dubstep.mp3
+Assets/Dreamteck/Splines/Examples/AudioVisualization/bensound-dubstep.mp3.meta
+Assets/Dreamteck/Splines/Examples/AudioVisualization/Scene.unity
+Assets/Dreamteck/Splines/Examples/AudioVisualization/Scene.unity.meta
+Assets/Dreamteck/Splines/Examples/AudioVisualization/SpectrumVisualizer.cs
+Assets/Dreamteck/Splines/Examples/AudioVisualization/SpectrumVisualizer.cs.meta
+Assets/Dreamteck/Splines/Examples/AudioVisualization/waveform.mat
+Assets/Dreamteck/Splines/Examples/AudioVisualization/waveform.mat.meta
+Assets/Dreamteck/Splines/Examples/AudioVisualization/waveform.PNG
+Assets/Dreamteck/Splines/Examples/AudioVisualization/waveform.PNG.meta
+Assets/Dreamteck/Splines/Examples/Following/Assets by EMACEART.pdf
+Assets/Dreamteck/Splines/Examples/Following/Assets by EMACEART.pdf.meta
+Assets/Dreamteck/Splines/Examples/Following/Instructions.txt
+Assets/Dreamteck/Splines/Examples/Following/Instructions.txt.meta
+Assets/Dreamteck/Splines/Examples/Following/Material.meta
+Assets/Dreamteck/Splines/Examples/Following/Meshes.meta
+Assets/Dreamteck/Splines/Examples/Following/Prefabs.meta
+Assets/Dreamteck/Splines/Examples/Following/Scene.unity
+Assets/Dreamteck/Splines/Examples/Following/Scene.unity.meta
+Assets/Dreamteck/Splines/Examples/Following/SceneSettings.lighting
+Assets/Dreamteck/Splines/Examples/Following/SceneSettings.lighting.meta
+Assets/Dreamteck/Splines/Examples/Following/Scripts.meta
+Assets/Dreamteck/Splines/Examples/Following/Material/Colorsheet.png
+Assets/Dreamteck/Splines/Examples/Following/Material/Colorsheet.png.meta
+Assets/Dreamteck/Splines/Examples/Following/Material/MaterialColorsheet.mat
+Assets/Dreamteck/Splines/Examples/Following/Material/MaterialColorsheet.mat.meta
+Assets/Dreamteck/Splines/Examples/Following/Meshes/comp.fbx
+Assets/Dreamteck/Splines/Examples/Following/Meshes/comp.fbx.meta
+Assets/Dreamteck/Splines/Examples/Following/Meshes/EA_branch4.fbx
+Assets/Dreamteck/Splines/Examples/Following/Meshes/EA_branch4.fbx.meta
+Assets/Dreamteck/Splines/Examples/Following/Meshes/EA_Bush1c.fbx
+Assets/Dreamteck/Splines/Examples/Following/Meshes/EA_Bush1c.fbx.meta
+Assets/Dreamteck/Splines/Examples/Following/Meshes/EA_Bush2d.fbx
+Assets/Dreamteck/Splines/Examples/Following/Meshes/EA_Bush2d.fbx.meta
+Assets/Dreamteck/Splines/Examples/Following/Meshes/EA_Pier1_end.fbx
+Assets/Dreamteck/Splines/Examples/Following/Meshes/EA_Pier1_end.fbx.meta
+Assets/Dreamteck/Splines/Examples/Following/Meshes/EA_Rock32.fbx
+Assets/Dreamteck/Splines/Examples/Following/Meshes/EA_Rock32.fbx.meta
+Assets/Dreamteck/Splines/Examples/Following/Meshes/EA_Swamp_tree6.fbx
+Assets/Dreamteck/Splines/Examples/Following/Meshes/EA_Swamp_tree6.fbx.meta
+Assets/Dreamteck/Splines/Examples/Following/Prefabs/EA_branch4_PRE.prefab
+Assets/Dreamteck/Splines/Examples/Following/Prefabs/EA_branch4_PRE.prefab.meta
+Assets/Dreamteck/Splines/Examples/Following/Prefabs/EA_Bush1c_PRE.prefab
+Assets/Dreamteck/Splines/Examples/Following/Prefabs/EA_Bush1c_PRE.prefab.meta
+Assets/Dreamteck/Splines/Examples/Following/Prefabs/EA_Bush2d_PRE.prefab
+Assets/Dreamteck/Splines/Examples/Following/Prefabs/EA_Bush2d_PRE.prefab.meta
+Assets/Dreamteck/Splines/Examples/Following/Prefabs/EA_Pier1_end_PRE.prefab
+Assets/Dreamteck/Splines/Examples/Following/Prefabs/EA_Pier1_end_PRE.prefab.meta
+Assets/Dreamteck/Splines/Examples/Following/Prefabs/EA_Rock32_PRE.prefab
+Assets/Dreamteck/Splines/Examples/Following/Prefabs/EA_Rock32_PRE.prefab.meta
+Assets/Dreamteck/Splines/Examples/Following/Prefabs/EA_Swamp_tree6_PRE.prefab
+Assets/Dreamteck/Splines/Examples/Following/Prefabs/EA_Swamp_tree6_PRE.prefab.meta
+Assets/Dreamteck/Splines/Examples/Following/Scripts/CameraSmoothRotation.cs
+Assets/Dreamteck/Splines/Examples/Following/Scripts/CameraSmoothRotation.cs.meta
+Assets/Dreamteck/Splines/Examples/Following/Scripts/URLButton.cs
+Assets/Dreamteck/Splines/Examples/Following/Scripts/URLButton.cs.meta
+Assets/Dreamteck/Splines/Examples/Junctions/FBX.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Instructions.txt
+Assets/Dreamteck/Splines/Examples/Junctions/Instructions.txt.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Materials.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Scene.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Scene.unity
+Assets/Dreamteck/Splines/Examples/Junctions/Scene.unity.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Scripts.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Textures.meta
+Assets/Dreamteck/Splines/Examples/Junctions/FBX/crystal.fbx
+Assets/Dreamteck/Splines/Examples/Junctions/FBX/crystal.fbx.meta
+Assets/Dreamteck/Splines/Examples/Junctions/FBX/Engine.FBX
+Assets/Dreamteck/Splines/Examples/Junctions/FBX/Engine.FBX.meta
+Assets/Dreamteck/Splines/Examples/Junctions/FBX/Tracks.FBX
+Assets/Dreamteck/Splines/Examples/Junctions/FBX/Tracks.FBX.meta
+Assets/Dreamteck/Splines/Examples/Junctions/FBX/Wagon.FBX
+Assets/Dreamteck/Splines/Examples/Junctions/FBX/Wagon.FBX.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Materials/blueprint_grid.png
+Assets/Dreamteck/Splines/Examples/Junctions/Materials/blueprint_grid.png.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Materials/Grid.mat
+Assets/Dreamteck/Splines/Examples/Junctions/Materials/Grid.mat.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Materials/Train.mat
+Assets/Dreamteck/Splines/Examples/Junctions/Materials/Train.mat.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Scene/LightingData.asset
+Assets/Dreamteck/Splines/Examples/Junctions/Scene/LightingData.asset.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Scene/ReflectionProbe-0.exr
+Assets/Dreamteck/Splines/Examples/Junctions/Scene/ReflectionProbe-0.exr.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Scripts/JunctionSwitch.cs
+Assets/Dreamteck/Splines/Examples/Junctions/Scripts/JunctionSwitch.cs.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Scripts/TrainCamera.cs
+Assets/Dreamteck/Splines/Examples/Junctions/Scripts/TrainCamera.cs.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Scripts/TrainEngine.cs
+Assets/Dreamteck/Splines/Examples/Junctions/Scripts/TrainEngine.cs.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Scripts/Wagon.cs
+Assets/Dreamteck/Splines/Examples/Junctions/Scripts/Wagon.cs.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Textures/Albedo.png
+Assets/Dreamteck/Splines/Examples/Junctions/Textures/Albedo.png.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Textures/Emission.png
+Assets/Dreamteck/Splines/Examples/Junctions/Textures/Emission.png.meta
+Assets/Dreamteck/Splines/Examples/Junctions/Textures/MetallicSmoothness.png
+Assets/Dreamteck/Splines/Examples/Junctions/Textures/MetallicSmoothness.png.meta
+Assets/Dreamteck/Splines/Examples/LengthEvents/LengthEvents.unity
+Assets/Dreamteck/Splines/Examples/LengthEvents/LengthEvents.unity.meta
+Assets/Dreamteck/Splines/Examples/LengthEvents/SetMaterialColor.cs
+Assets/Dreamteck/Splines/Examples/LengthEvents/SetMaterialColor.cs.meta
+Assets/Dreamteck/Splines/Examples/Morphs/Morph.mat
+Assets/Dreamteck/Splines/Examples/Morphs/Morph.mat.meta
+Assets/Dreamteck/Splines/Examples/Morphs/Scene.unity
+Assets/Dreamteck/Splines/Examples/Morphs/Scene.unity.meta
+Assets/Dreamteck/Splines/Examples/Particles/Scene.meta
+Assets/Dreamteck/Splines/Examples/Particles/Scene.unity
+Assets/Dreamteck/Splines/Examples/Particles/Scene.unity.meta
+Assets/Dreamteck/Splines/Examples/Particles/Scene/LightingData.asset
+Assets/Dreamteck/Splines/Examples/Particles/Scene/LightingData.asset.meta
+Assets/Dreamteck/Splines/Examples/Particles/Scene/ReflectionProbe-0.exr
+Assets/Dreamteck/Splines/Examples/Particles/Scene/ReflectionProbe-0.exr.meta
+Assets/Dreamteck/Splines/Examples/Projection/Ball.physicMaterial
+Assets/Dreamteck/Splines/Examples/Projection/Ball.physicMaterial.meta
+Assets/Dreamteck/Splines/Examples/Projection/Instructions.txt
+Assets/Dreamteck/Splines/Examples/Projection/Instructions.txt.meta
+Assets/Dreamteck/Splines/Examples/Projection/Materials.meta
+Assets/Dreamteck/Splines/Examples/Projection/NewLayer.terrainlayer
+Assets/Dreamteck/Splines/Examples/Projection/NewLayer.terrainlayer.meta
+Assets/Dreamteck/Splines/Examples/Projection/Scene.meta
+Assets/Dreamteck/Splines/Examples/Projection/Scene.unity
+Assets/Dreamteck/Splines/Examples/Projection/Scene.unity.meta
+Assets/Dreamteck/Splines/Examples/Projection/SceneSettings.lighting
+Assets/Dreamteck/Splines/Examples/Projection/SceneSettings.lighting.meta
+Assets/Dreamteck/Splines/Examples/Projection/Scripts.meta
+Assets/Dreamteck/Splines/Examples/Projection/Simple Terrain.asset
+Assets/Dreamteck/Splines/Examples/Projection/Simple Terrain.asset.meta
+Assets/Dreamteck/Splines/Examples/Projection/Materials/Dash.mat
+Assets/Dreamteck/Splines/Examples/Projection/Materials/Dash.mat.meta
+Assets/Dreamteck/Splines/Examples/Projection/Materials/dash.PNG
+Assets/Dreamteck/Splines/Examples/Projection/Materials/dash.PNG.meta
+Assets/Dreamteck/Splines/Examples/Projection/Materials/Marble.jpg
+Assets/Dreamteck/Splines/Examples/Projection/Materials/Marble.jpg.meta
+Assets/Dreamteck/Splines/Examples/Projection/Materials/Marble.mat
+Assets/Dreamteck/Splines/Examples/Projection/Materials/Marble.mat.meta
+Assets/Dreamteck/Splines/Examples/Projection/Scene/LightingData.asset
+Assets/Dreamteck/Splines/Examples/Projection/Scene/LightingData.asset.meta
+Assets/Dreamteck/Splines/Examples/Projection/Scene/Lightmap-0_comp_dir.png
+Assets/Dreamteck/Splines/Examples/Projection/Scene/Lightmap-0_comp_dir.png.meta
+Assets/Dreamteck/Splines/Examples/Projection/Scene/Lightmap-0_comp_light.exr
+Assets/Dreamteck/Splines/Examples/Projection/Scene/Lightmap-0_comp_light.exr.meta
+Assets/Dreamteck/Splines/Examples/Projection/Scene/ReflectionProbe-0.exr
+Assets/Dreamteck/Splines/Examples/Projection/Scene/ReflectionProbe-0.exr.meta
+Assets/Dreamteck/Splines/Examples/Projection/Scripts/AddForceAlongPath.cs
+Assets/Dreamteck/Splines/Examples/Projection/Scripts/AddForceAlongPath.cs.meta
+Assets/Dreamteck/Splines/Examples/Projection/Scripts/BallCamera.cs
+Assets/Dreamteck/Splines/Examples/Projection/Scripts/BallCamera.cs.meta
+Assets/Dreamteck/Splines/Examples/Projection/Scripts/LapCounter.cs
+Assets/Dreamteck/Splines/Examples/Projection/Scripts/LapCounter.cs.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Scene.unity
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Scene.unity.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster/SceneSettings.lighting
+Assets/Dreamteck/Splines/Examples/RollerCoaster/SceneSettings.lighting.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Scripts.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Scripts/CameraLook.cs
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Scripts/CameraLook.cs.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Scripts/RollerCoaster.cs
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Scripts/RollerCoaster.cs.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds/fast.ogg
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds/fast.ogg.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds/medium.ogg
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds/medium.ogg.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds/medium_transition.ogg
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds/medium_transition.ogg.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds/normal.ogg
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds/normal.ogg.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds/slow.ogg
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds/slow.ogg.meta
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds/static.ogg
+Assets/Dreamteck/Splines/Examples/RollerCoaster/Sounds/static.ogg.meta
+Assets/Dreamteck/Splines/Presets/heart.jsp
+Assets/Dreamteck/Splines/Presets/heart.jsp.meta
+Assets/Dreamteck/Utilities/ArrayUtility.cs
+Assets/Dreamteck/Utilities/ArrayUtility.cs.meta
+Assets/Dreamteck/Utilities/DMath.cs
+Assets/Dreamteck/Utilities/DMath.cs.meta
+Assets/Dreamteck/Utilities/Dreamteck.Utilities.asmdef
+Assets/Dreamteck/Utilities/Dreamteck.Utilities.asmdef.meta
+Assets/Dreamteck/Utilities/DuplicateUtility.cs
+Assets/Dreamteck/Utilities/DuplicateUtility.cs.meta
+Assets/Dreamteck/Utilities/Editor.meta
+Assets/Dreamteck/Utilities/LinearAlgebraUtility.cs
+Assets/Dreamteck/Utilities/LinearAlgebraUtility.cs.meta
+Assets/Dreamteck/Utilities/MeshUtility.cs
+Assets/Dreamteck/Utilities/MeshUtility.cs.meta
+Assets/Dreamteck/Utilities/TransformUtility.cs
+Assets/Dreamteck/Utilities/TransformUtility.cs.meta
+Assets/Dreamteck/Utilities/TS_Bounds.cs
+Assets/Dreamteck/Utilities/TS_Bounds.cs.meta
+Assets/Dreamteck/Utilities/TS_Mesh.cs
+Assets/Dreamteck/Utilities/TS_Mesh.cs.meta
+Assets/Dreamteck/Utilities/TS_Transform.cs
+Assets/Dreamteck/Utilities/TS_Transform.cs.meta
+Assets/Dreamteck/Utilities/Editor/Dreamteck.Utilities.Editor.asmdef
+Assets/Dreamteck/Utilities/Editor/Dreamteck.Utilities.Editor.asmdef.meta
+Assets/Dreamteck/Utilities/Editor/DreamteckEditorGUI.cs
+Assets/Dreamteck/Utilities/Editor/DreamteckEditorGUI.cs.meta
+Assets/Dreamteck/Utilities/Editor/EditorGUIEvents.cs
+Assets/Dreamteck/Utilities/Editor/EditorGUIEvents.cs.meta
+Assets/Dreamteck/Utilities/Editor/FindDerivedClasses.cs
+Assets/Dreamteck/Utilities/Editor/FindDerivedClasses.cs.meta
+Assets/Dreamteck/Utilities/Editor/Images.meta
+Assets/Dreamteck/Utilities/Editor/ModuleInstaller.cs
+Assets/Dreamteck/Utilities/Editor/ModuleInstaller.cs.meta
+Assets/Dreamteck/Utilities/Editor/ResourceUtility.cs
+Assets/Dreamteck/Utilities/Editor/ResourceUtility.cs.meta
+Assets/Dreamteck/Utilities/Editor/ScriptingDefineUtility.cs
+Assets/Dreamteck/Utilities/Editor/ScriptingDefineUtility.cs.meta
+Assets/Dreamteck/Utilities/Editor/Toolbar.cs
+Assets/Dreamteck/Utilities/Editor/Toolbar.cs.meta
+Assets/Dreamteck/Utilities/Editor/WelcomeWindow.cs
+Assets/Dreamteck/Utilities/Editor/WelcomeWindow.cs.meta
+Assets/Dreamteck/Utilities/Editor/Images/changelog.png
+Assets/Dreamteck/Utilities/Editor/Images/changelog.png.meta
+Assets/Dreamteck/Utilities/Editor/Images/discord.png
+Assets/Dreamteck/Utilities/Editor/Images/discord.png.meta
+Assets/Dreamteck/Utilities/Editor/Images/examples.png
+Assets/Dreamteck/Utilities/Editor/Images/examples.png.meta
+Assets/Dreamteck/Utilities/Editor/Images/get_started.png
+Assets/Dreamteck/Utilities/Editor/Images/get_started.png.meta
+Assets/Dreamteck/Utilities/Editor/Images/manual.png
+Assets/Dreamteck/Utilities/Editor/Images/manual.png.meta
+Assets/Dreamteck/Utilities/Editor/Images/pdf.png
+Assets/Dreamteck/Utilities/Editor/Images/pdf.png.meta
+Assets/Dreamteck/Utilities/Editor/Images/playmaker.png
+Assets/Dreamteck/Utilities/Editor/Images/playmaker.png.meta
+Assets/Dreamteck/Utilities/Editor/Images/rate.png
+Assets/Dreamteck/Utilities/Editor/Images/rate.png.meta
+Assets/Dreamteck/Utilities/Editor/Images/support.png
+Assets/Dreamteck/Utilities/Editor/Images/support.png.meta
+Assets/Dreamteck/Utilities/Editor/Images/tmpro.png
+Assets/Dreamteck/Utilities/Editor/Images/tmpro.png.meta
+Assets/Dreamteck/Utilities/Editor/Images/tutorials.png
+Assets/Dreamteck/Utilities/Editor/Images/tutorials.png.meta
+Assets/Dreamteck/Utilities/Editor/Images/youtube.png
+Assets/Dreamteck/Utilities/Editor/Images/youtube.png.meta
