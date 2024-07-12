@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using System.Threading.Tasks;
+using DG.Tweening;
 using Enum;
 using Managers;
 using TMPro;
@@ -43,8 +44,10 @@ namespace UI
       // Bu paneli saga kaydir sonra kapa
     }
 
-    public void OnGameFinished(bool success)
+    public async void OnGameFinished(bool success)
     {
+      await Task.Delay(SpecialTimeKey.CarDestroyForSuccessfulPanelWaitingTime);
+
       CloseBothPanel();
       gameObject.SetActive(true);
       _statsPart.SetActive(true);

@@ -41,7 +41,7 @@ namespace UI
       
       LevelVo levelVo = LevelManager.LevelData;
       SetTimer(levelVo.Time);
-      SetInitialMoveCount(levelVo.MovesCount);
+      _movesText.text = levelVo.MovesCount.ToString();
       
       gameObject.SetActive(true);
 
@@ -52,14 +52,11 @@ namespace UI
 
     private async void ClosePanel()
     {
+      await Task.Delay(SpecialTimeKey.CarDestroyForSuccessfulPanelWaitingTime);
+      
       await PanelManager.Instance.PanelSlidingAnimationHorizontal(transform, 0, -Screen.width).AsyncWaitForCompletion();
 
       gameObject.SetActive(false);
-    }
-
-    private void SetInitialMoveCount(int movesCount)
-    {
-      _movesText.text = movesCount.ToString();
     }
 
     public void OnMove(int remainingMove)

@@ -35,11 +35,9 @@ namespace Managers
       OnGameStateChanged?.Invoke(GameStateKey.InGame);
     }
 
-    public async void GameFinished(bool success)
+    public void GameFinished(bool success)
     {
       if (GameStateKey != GameStateKey.InGame) return;
-
-      await Task.Delay(500);
       
       OnGameStateChanged?.Invoke(success ? GameStateKey.EndGameSuccess : GameStateKey.EndGameFail);
     }
