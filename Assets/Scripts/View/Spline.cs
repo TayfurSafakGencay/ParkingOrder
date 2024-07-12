@@ -1,7 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Dreamteck.Splines;
+using Enum;
 using Managers;
+using UnityEditor.VersionControl;
 using UnityEngine;
+using Task = System.Threading.Tasks.Task;
 
 namespace View
 {
@@ -15,24 +19,28 @@ namespace View
     private void Awake()
     {
       _splineComputer = gameObject.GetComponent<SplineComputer>();
+      gameObject.name = "Spline: " + transform.GetSiblingIndex();
+
+      GameManager.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnGameStateChanged(GameStateKey gameState)
+    {
+      if (gameState == GameStateKey.InGame)
+      {
+        OnGameStarted();
+      }
+    }
+
+    private async void OnGameStarted()
+    {
+      await Task.Delay(SpecialTimeKey.WaitLevelData);
       
-      SubscribeActions();
-    }
-
-    private void SubscribeActions()
-    {
-      GameManager.OnGameStarted += OnGameStarted;
-    }
-
-    private void OnGameStarted()
-    {
       SplineManager.Instance.AddSpline(_splineComputer, this);
-
     }
 
     public void SetColors(Color color)
     {
-      // ColorAllTheDots(color);
       ColorParkAreaLines(color);
     }
     
@@ -52,6 +60,11 @@ namespace View
       {
         _parkAreaLines[i].material.color = color;
       }
+    }
+
+    private void OnDestroy()
+    {
+      GameManager.OnGameStateChanged -= OnGameStateChanged;
     }
   }
 }
