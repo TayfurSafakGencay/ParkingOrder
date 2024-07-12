@@ -4,18 +4,23 @@ using System.Threading.Tasks;
 using Data;
 using Enum;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace Managers
 {
   public class LevelManager : MonoBehaviour
   {
+    [SerializeField]
+    private Transform _levelPool;
+    
     public static LevelManager Instance;
     
-    private Dictionary<int, LevelVo> _levelsData = new();
+    private readonly Dictionary<int, LevelVo> _levelsData = new();
 
     public static LevelVo LevelData;
 
-    public static int Level = 1;
+    public static int Level;
 
     public static int CarCount { get; private set; }
     
@@ -26,7 +31,8 @@ namespace Managers
     private void Awake()
     {
       if (Instance == null) Instance = this;
-      
+
+      Level = DataManager.Instance.LoadInt(PlayerPrefKey.Level);
       LoadLevelData();
 
       GameManager.OnGameStateChanged += OnGameStateChanged;
@@ -44,12 +50,16 @@ namespace Managers
       }
     }
 
-    private void OnGameFinishedSuccessfully()
+    private async void OnGameFinishedSuccessfully()
     {
-      Level++;
+      await Task.Delay(SpecialTimeKey.WaitLevelData);
+      
+      DataManager.Instance.SaveInt(PlayerPrefKey.Level, Level++);
+
+      Level = DataManager.Instance.LoadInt(PlayerPrefKey.Level);
     }
 
-    private async void OnGameStarted()
+    private void OnGameStarted()
     {
       CompletedCars = 0;
       CarCount = 0;
@@ -57,6 +67,8 @@ namespace Managers
       LevelData = _levelsData[Level];
       
       RemainingMoves = LevelData.MovesCount;
+      
+      CreateLevel();
     }
 
     public void ReachedPoint(bool end)
@@ -91,6 +103,26 @@ namespace Managers
     public void IncreaseCarCount()
     {
       CarCount++;
+    }
+    
+    private GameObject _levelObject;
+
+    private async void CreateLevel()
+    {
+      if (_levelObject != null)
+      {
+        Destroy(_levelObject);
+      }
+      
+      string levelName = "Level " + Level;
+      AsyncOperationHandle<GameObject> asyncOperationHandle = Addressables.InstantiateAsync(levelName, Vector3.zero, Quaternion.identity, _levelPool);
+
+      await asyncOperationHandle.Task;
+      
+      if (asyncOperationHandle.Status == AsyncOperationStatus.Succeeded)
+      {
+        _levelObject = asyncOperationHandle.Result;
+      }
     }
 
     private const string _dataPath = "Data/Level/Level Data";
