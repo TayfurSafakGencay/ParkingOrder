@@ -17,6 +17,8 @@ namespace Managers
     [SerializeField]
     private Transform _carPool;
 
+    private readonly Dictionary<int, GameObject> _movingCars = new();
+
     private void Awake()
     {
       if (Instance == null)
@@ -28,7 +30,7 @@ namespace Managers
       GameObject carInstantiate = Instantiate(GetRandomCar(), Vector3.zero, Quaternion.identity, _carPool);
 
       Car car = carInstantiate.GetComponent<Car>();
-      car.InitialSplineSettings(splineComputer, material);
+      car.InitialCarSettings(splineComputer, material);
     }
 
     private GameObject GetRandomCar()
@@ -36,6 +38,24 @@ namespace Managers
       Random random = new ();
       int index = random.Next(_cars.Count);
       return _cars[index];
+    }
+
+    public void CarMoved(int id, GameObject car)
+    {
+      _movingCars.Add(id, car);
+    }
+
+    public void CarReached(int id)
+    {
+      if (_movingCars.ContainsKey(id))
+      {
+        _movingCars.Remove(id);
+      }
+    }
+
+    public int GetMovingCarCount()
+    {
+      return _movingCars.Count;
     }
   }
 }

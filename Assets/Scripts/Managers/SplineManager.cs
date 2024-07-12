@@ -29,6 +29,8 @@ namespace Managers
       spline.SetColors(color);
       
       CarManager.Instance.CreateCar(splineComputer, material);
+      
+      LevelManager.Instance.IncreaseCarCount();
     }
 
     private Color GetRandomColor()

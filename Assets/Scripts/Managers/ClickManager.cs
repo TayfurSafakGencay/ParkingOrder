@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Enum;
+using UnityEngine;
 using View;
 
 namespace Managers
@@ -11,6 +12,8 @@ namespace Managers
     private const string _car = "Car";
     private void Update()
     {
+      if (GameManager.GameStateKey != GameStateKey.InGame) return;
+
       if (!Input.GetMouseButtonDown(0)) return;
       Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
 

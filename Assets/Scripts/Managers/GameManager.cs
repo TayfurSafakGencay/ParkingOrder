@@ -1,5 +1,7 @@
 ﻿using System;
+using Enum;
 using UnityEngine;
+using Task = System.Threading.Tasks.Task;
 
 namespace Managers
 {
@@ -7,9 +9,20 @@ namespace Managers
   {
     public static GameManager Instance;
 
+    public static GameStateKey GameStateKey = GameStateKey.Initial;
+
+    public static Action<GameStateKey> OnGameStateChanged;
+
     private void Awake()
     {
       if (Instance == null) Instance = this;
+
+      OnGameStateChanged += GameStateChanged;
+    }
+
+    private void GameStateChanged(GameStateKey newGameStateKey)
+    {
+      GameStateKey = newGameStateKey;
     }
 
     private void Start()
@@ -17,18 +30,18 @@ namespace Managers
       GameStarted();
     }
 
-    public static Action OnGameStarted;
-    
     public void GameStarted()
     {
-      OnGameStarted?.Invoke();  
+      OnGameStateChanged?.Invoke(GameStateKey.InGame);
     }
 
-    public static Action<bool> OnGameFinished;
-
-    public void GameFinished(bool success)
+    public async void GameFinished(bool success)
     {
-      OnGameFinished?.Invoke(success);
+      if (GameStateKey != GameStateKey.InGame) return;
+
+      await Task.Delay(500);
+      
+      OnGameStateChanged?.Invoke(success ? GameStateKey.EndGameSuccess : GameStateKey.EndGameFail);
     }
   }
 }
