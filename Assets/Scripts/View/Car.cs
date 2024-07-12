@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
@@ -5,6 +6,7 @@ using Dreamteck.Splines;
 using Enum;
 using Managers;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace View
 {
@@ -32,9 +34,16 @@ namespace View
 
     private void OnGameStateChanged(GameStateKey gameState)
     {
-      if (gameState == GameStateKey.EndGameSuccess)
+      switch (gameState)
       {
-        OnGameFinishedSuccessfully();
+        case GameStateKey.EndGameSuccess:
+          OnGameFinishedSuccessfully();
+          break;
+        case GameStateKey.EndGameFail:
+          Destroy(gameObject, Random.Range(0.25f, 0.75f));
+          break;
+        default:
+          throw new ArgumentOutOfRangeException(nameof(gameState), gameState, null);
       }
     }
 
@@ -44,13 +53,15 @@ namespace View
       {
         CameraManager.Instance.ShakeCamera();
 
+        Stop();
+
         GameManager.Instance.GameFinished(false);
       }
     }
 
     private bool _isCarMoving;
 
-    private const float _followSpeed = 3f;
+    private const float _followSpeed = 5f;
 
     public void Move(float speed = _followSpeed)
     {

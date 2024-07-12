@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Dreamteck.Splines;
+using Enum;
 using UnityEngine;
 using View;
 using Random = System.Random;
@@ -23,6 +23,16 @@ namespace Managers
     {
       if (Instance == null)
         Instance = this;
+
+      GameManager.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnGameStateChanged(GameStateKey gameState)
+    {
+      if (gameState != GameStateKey.InGame)
+      {
+        _movingCars.Clear();
+      }
     }
 
     public void CreateCar(SplineComputer splineComputer, Material material)
