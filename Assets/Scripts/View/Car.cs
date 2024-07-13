@@ -1,4 +1,3 @@
-using System;
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
@@ -43,7 +42,7 @@ namespace View
           Destroy(gameObject, Random.Range(0.25f, 0.75f));
           break;
         default:
-          throw new ArgumentOutOfRangeException(nameof(gameState), gameState, null);
+         return;
       }
     }
 
