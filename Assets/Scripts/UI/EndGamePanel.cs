@@ -14,14 +14,11 @@ namespace UI
     private GameObject _statsPart;
 
     [Space(10)]
-    [SerializeField]
-    private TextMeshProUGUI _coinText;
+    public TextMeshProUGUI CoinText;
 
-    [SerializeField]
-    private TextMeshProUGUI _diamondText;
+    public TextMeshProUGUI DiamondText;
 
-    [SerializeField]
-    private TextMeshProUGUI _energyText;
+    public TextMeshProUGUI EnergyText;
     
     [Header("Win")]
     [SerializeField]
@@ -84,9 +81,9 @@ namespace UI
     {
       PlayerDataVo playerDataVo = DataManager.Instance.PlayerDataVo;
       
-      _coinText.text = playerDataVo.Coin.ToString();
-      _diamondText.text = playerDataVo.Diamond.ToString();
-      _energyText.text = playerDataVo.Energy.ToString();
+      CoinText.text = playerDataVo.Coin.ToString();
+      DiamondText.text = playerDataVo.Diamond.ToString();
+      EnergyText.text = playerDataVo.Energy.ToString();
     }
 
     private void OpenSuccessPanel()
@@ -102,8 +99,12 @@ namespace UI
 
       _failPartLevelText.text = "Level " + _levelForEndGamePanel;
     }
-    
-    public void OnPlay()
+
+    public void OnReward()
+    {
+      GameManager.ChangeGameState(GameStateKey.Reward);
+    }
+    public void OnRetry()
     {
       GameManager.Instance.GameStarted();
     }

@@ -13,5 +13,7 @@
     public const int WaitLevelData = 5;
     
     public const int CarDestroyForSuccessfulPanelWaitingTime = 1000;
+
+    public const int WaitStopCandle = 5;
   }
 }
