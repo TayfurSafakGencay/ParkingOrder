@@ -28,14 +28,16 @@ namespace Managers
 
     public int RemainingMoves { get; private set; }
     
-    private void Awake()
+    private async void Awake()
     {
       if (Instance == null) Instance = this;
+      
+      GameManager.OnGameStateChanged += OnGameStateChanged;
+
+      await Task.Delay(SpecialTimeKey.WaitLevelData / 5);
 
       Level = DataManager.Instance.LoadInt(PlayerPrefKey.Level);
       LoadLevelData();
-
-      GameManager.OnGameStateChanged += OnGameStateChanged;
     }
 
     private void OnGameStateChanged(GameStateKey gameState)
@@ -59,8 +61,10 @@ namespace Managers
       Level = DataManager.Instance.LoadInt(PlayerPrefKey.Level);
     }
 
-    private void OnGameStarted()
+    private async void OnGameStarted()
     {
+      await Task.Delay(SpecialTimeKey.WaitLevelData / 2);
+      
       CompletedCars = 0;
       CarCount = 0;
 

@@ -30,6 +30,8 @@ namespace Managers
 
     private void SetInitialData()
     {
+      SetPlayerDataVo();
+
       if (PlayerPrefs.HasKey(PlayerPrefKey.Level.ToString())) return;
       
       SaveInt(PlayerPrefKey.Level, 1);

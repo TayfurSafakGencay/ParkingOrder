@@ -1,7 +1,6 @@
 ﻿using System;
 using Enum;
 using UnityEngine;
-using Task = System.Threading.Tasks.Task;
 
 namespace Managers
 {
@@ -23,6 +22,11 @@ namespace Managers
     private void GameStateChanged(GameStateKey newGameStateKey)
     {
       GameStateKey = newGameStateKey;
+    }
+
+    public static void ChangeGameState(GameStateKey gameStateKey)
+    {
+      OnGameStateChanged?.Invoke(gameStateKey);
     }
 
     private void Start()
