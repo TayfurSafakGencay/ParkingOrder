@@ -9,9 +9,9 @@ namespace Managers
     
     private CinemachineVirtualCamera _cinemachineVirtualCamera;
 
-    private const float _shakeIntensity = 2f;
+    private const float _shakeIntensity = 4f;
 
-    private const float _shakeTime = 0.3f;
+    private const float _shakeTime = 0.75f;
 
     private float _timer;
 
