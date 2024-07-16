@@ -42,3 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: ChestOpening
+    uniqueID: 2748442697
+    locked: 0
