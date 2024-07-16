@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using Data;
 using Dreamteck.Splines;
 using Enum;
 using UnityEngine;
@@ -12,17 +14,20 @@ namespace Managers
     public static CarManager Instance;
 
     [SerializeField]
-    private List<GameObject> _cars;
-
-    [SerializeField]
     private Transform _carPool;
 
     private readonly Dictionary<int, GameObject> _movingCars = new();
+
+    private readonly Dictionary<int, CarVo> _cars = new();
+
+    private readonly List<int> _ownedCarIds = new();
 
     private void Awake()
     {
       if (Instance == null)
         Instance = this;
+      
+      LoadCarData();
 
       GameManager.OnGameStateChanged += OnGameStateChanged;
     }
@@ -37,16 +42,19 @@ namespace Managers
 
     public void CreateCar(SplineComputer splineComputer, Material material)
     {
-      GameObject carInstantiate = Instantiate(GetRandomCar(), Vector3.zero, Quaternion.identity, _carPool);
+      CarVo carVo = GetRandomCar();
+      GameObject carInstantiate = Instantiate(carVo.CarObject, Vector3.zero, Quaternion.identity, _carPool);
 
       Car car = carInstantiate.GetComponent<Car>();
-      car.InitialCarSettings(splineComputer, material);
+      car.InitialCarSettings(splineComputer, material, carVo.Speed);
     }
 
-    private GameObject GetRandomCar()
+    private CarVo GetRandomCar()
     {
-      Random random = new ();
-      int index = random.Next(_cars.Count);
+      Random random = new();
+      int randomIndex = random.Next(_ownedCarIds.Count);
+      int index = _ownedCarIds[randomIndex];
+
       return _cars[index];
     }
 
@@ -66,6 +74,37 @@ namespace Managers
     public int GetMovingCarCount()
     {
       return _movingCars.Count;
+    }
+    
+    private const string _dataPath = "Data/Car/Car Data";
+    private void LoadCarData()
+    {
+      CarData data = Resources.Load<CarData>(_dataPath);
+      List<CarVo> carData = data.CarFeatures;
+      
+      for (int i = 0; i < carData.Count; i++)
+      {
+        CarVo carVo = carData[i];
+        _cars.Add(carVo.Id, carVo);
+
+        if (!carVo.Owned) continue;
+        _ownedCarIds.Add(carVo.Id);
+      }
+    }
+
+    public void UnlockedCar(int id)
+    {
+      _ownedCarIds.Add(id);
+    }
+
+    public List<int> GetUnlockedCars()
+    {
+      return _ownedCarIds;
+    }
+
+    public List<int> GetCarsCount()
+    {
+      return _cars.Keys.ToList();
     }
   }
 }

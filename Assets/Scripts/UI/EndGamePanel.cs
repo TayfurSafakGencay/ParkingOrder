@@ -102,11 +102,16 @@ namespace UI
 
     public void OnReward()
     {
+      if (GameManager.GameStateKey == GameStateKey.ChestOpening || GameManager.GameStateKey == GameStateKey.Reward)
+      {
+        GameManager.Instance.GameStart();
+        return;
+      }
       GameManager.ChangeGameState(GameStateKey.Reward);
     }
     public void OnRetry()
     {
-      GameManager.Instance.GameStarted();
+      GameManager.Instance.GameStart();
     }
 
     public void OnOpenShop()

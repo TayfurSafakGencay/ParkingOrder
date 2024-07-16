@@ -31,10 +31,10 @@ namespace Managers
 
     private void Start()
     {
-      GameStarted();
+      GameStart();
     }
 
-    public void GameStarted()
+    public void GameStart()
     {
       OnGameStateChanged?.Invoke(GameStateKey.InGame);
     }

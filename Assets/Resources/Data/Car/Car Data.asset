@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9b92b170794ccf88d5e06876411a74, type: 3}
+  m_Name: Car Data
+  m_EditorClassIdentifier: 
+  CarFeatures:
+  - CarObject: {fileID: 6822936032774757128, guid: a977b79adbd63104ebcc2e1a7ec4f5ea, type: 3}
+    Speed: 3
+    Id: 0
+    Owned: 1
+  - CarObject: {fileID: 3779370193901622553, guid: 99ed6eb2e7b1b414ead63f4875b96554, type: 3}
+    Speed: 5
+    Id: 1
+    Owned: 0
+  - CarObject: {fileID: 2972568499147430222, guid: 75497e55a760e244ca9b985670e2e89e, type: 3}
+    Speed: 4
+    Id: 2
+    Owned: 0
+  - CarObject: {fileID: 2680623345384376668, guid: d684a29bf9b8cfb428411ae0eaf30e2c, type: 3}
+    Speed: 4
+    Id: 3
+    Owned: 0
+  - CarObject: {fileID: 4544459426609589257, guid: eef27746016a226448d1ec996bc402de, type: 3}
+    Speed: 6
+    Id: 4
+    Owned: 0
+  - CarObject: {fileID: 8475465250975973676, guid: c9bdd13096ab90e47ade0c38ccb2d3c2, type: 3}
+    Speed: 7
+    Id: 5
+    Owned: 0
+  - CarObject: {fileID: 7634901384756540567, guid: b39b7c0588756f54e8921d90f1b89ca0, type: 3}
+    Speed: 7
+    Id: 6
+    Owned: 0

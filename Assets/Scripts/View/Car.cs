@@ -19,6 +19,10 @@ namespace View
     [SerializeField]
     private int _materialIndex;
 
+    [Range(0, 6)]
+    [SerializeField]
+    private int _id; // TODO: Safak
+
     private const string _objectTag = "Car";
 
     private void Awake()
@@ -26,7 +30,9 @@ namespace View
       _splineFollower = gameObject.GetComponent<SplineFollower>();
 
       gameObject.tag = _objectTag;
+      
       gameObject.GetComponent<BoxCollider>().enabled = false;
+      gameObject.GetComponent<Rigidbody>().isKinematic = false;
 
       GameManager.OnGameStateChanged += OnGameStateChanged;
     }
@@ -51,7 +57,7 @@ namespace View
       if (other.gameObject.CompareTag("Car"))
       {
         CameraManager.Instance.ShakeCamera();
-
+        
         Stop();
 
         GameManager.Instance.GameFinished(false);
@@ -60,9 +66,9 @@ namespace View
 
     private bool _isCarMoving;
 
-    private const float _followSpeed = 5f;
+    private float _followSpeed;
 
-    public void Move(float speed = _followSpeed)
+    public void Move()
     {
       if (_isCarMoving) return;
 
@@ -70,7 +76,7 @@ namespace View
 
       CarManager.Instance.CarMoved(_moveDetectId, gameObject);
 
-      _splineFollower.followSpeed = speed * (int)_splineFollower.direction;
+      _splineFollower.followSpeed = _followSpeed * (int)_splineFollower.direction;
 
       _isCarMoving = true;
     }
@@ -113,11 +119,12 @@ namespace View
 
     private int _moveDetectId;
 
-    public void InitialCarSettings(SplineComputer splineComputer, Material material)
+    public void InitialCarSettings(SplineComputer splineComputer, Material material, int speed)
     {
       SetSpline(splineComputer);
       SetMaterial(material);
       SetInitialSplineSettings();
+      _followSpeed = speed;
 
       transform.name = "Car: " + transform.GetSiblingIndex();
       _moveDetectId = transform.GetSiblingIndex();

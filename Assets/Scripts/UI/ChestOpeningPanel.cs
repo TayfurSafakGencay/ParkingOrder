@@ -7,7 +7,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
 using Sequence = DG.Tweening.Sequence;
 
 namespace UI
@@ -83,8 +82,30 @@ namespace UI
       ChangeChestView();
     }
 
+    private bool SetRewards()
+    {
+      List<int> totalCars = CarManager.Instance.GetCarsCount();
+      List<int> unlockedCars = CarManager.Instance.GetUnlockedCars();
+
+      for (int i = 0; i < totalCars.Count; i++)
+      {
+        int id = totalCars[i];
+
+        if (unlockedCars.Contains(id)) continue;
+        if (_lockedCars.Contains(id)) continue;
+        _lockedCars.Add(id);
+      }
+
+      if (_lockedCars.Count > 1) return true;
+      
+      ClosePanelWithoutReward();
+      return false;
+    }
+
     private async void OpenPanel()
     {
+      if (!SetRewards()) return;
+      
       _background.color = new Color(1, 1, 1, 0);
       _chest.localScale = new Vector3(0, 0, 0);
       
@@ -166,8 +187,6 @@ namespace UI
       gameObject.SetActive(true);
     }
 
-    private const int MaxId = 6;
-
     [Header("3D Animation Positions")]
     [SerializeField]
     private Transform _initialPositionFor3DAnimationObject;
@@ -182,23 +201,20 @@ namespace UI
     [SerializeField]
     private List<RewardCar> _rewardCars;
 
+    private readonly List<int> _lockedCars = new();
+
     private async void GetReward()
     {
-      int id = Random.Range(0, MaxId);
-      int id2;
+      int firstCarId = GetRandomCar(_lockedCars);
+      _lockedCars.Remove(firstCarId);
+      int secondCarId = GetRandomCar(_lockedCars);
+      
+      
+      CarManager.Instance.UnlockedCar(firstCarId);
+      CarManager.Instance.UnlockedCar(secondCarId);
 
-      while (true)
-      {
-        id2 = Random.Range(0, MaxId);
-
-        if (id != id2)
-        {
-          break;
-        }
-      }
-
-      Sequence firstSequence = CarAnimation(id, _firstTargetForAnimation, out _firstCar);
-      await firstSequence.Append(CarAnimation(id2, _secondTargetForAnimation, out _secondCar)).AsyncWaitForCompletion();
+      Sequence firstSequence = CarAnimation(firstCarId, _firstTargetForAnimation, out _firstCar);
+      await firstSequence.Append(CarAnimation(secondCarId, _secondTargetForAnimation, out _secondCar)).AsyncWaitForCompletion();
 
       CarRotationAnimation(_firstCar);
       CarRotationAnimation(_secondCar);
@@ -206,6 +222,14 @@ namespace UI
       await ChestClosingAnimation().AsyncWaitForCompletion();
       
       PanelClosingAnimations();
+    }
+
+    private int GetRandomCar(List<int> lockedCars)
+    {
+      System.Random random = new();
+      int randomIndex = random.Next(lockedCars.Count);
+      int carId = lockedCars[randomIndex];
+      return carId;
     }
 
     private void PanelClosingAnimations()
@@ -223,6 +247,13 @@ namespace UI
         
         gameObject.SetActive(false);
       });
+    }
+
+    private void ClosePanelWithoutReward()
+    {
+      _background.DOFade(0, 0.5f);
+
+      gameObject.SetActive(false);
     }
 
     private const float _carAnimationTime = 1f;
@@ -263,9 +294,6 @@ namespace UI
   [Serializable]
   public class RewardCar
   {
-    [Range(0, 6)]
-    public int Id;
-
     public GameObject Car;
   }
 }
