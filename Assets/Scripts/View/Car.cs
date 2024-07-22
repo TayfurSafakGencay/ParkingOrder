@@ -22,7 +22,7 @@ namespace View
 
     [Range(0, 6)]
     [SerializeField]
-    private int _id; // TODO: Safak
+    private int _id;
 
     private const string _objectTag = "Car";
 

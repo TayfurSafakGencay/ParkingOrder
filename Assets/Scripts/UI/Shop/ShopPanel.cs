@@ -137,8 +137,6 @@ namespace UI.Shop
       }
 
       ScrollRectAnimation(_threeDimensionObjectScrollRect, 2.5f);
-
-      //TODO: Safak: Level, Particle, Sound
     }
 
     public void BuyCar(int id, int diamondReward, int coinPrice)
