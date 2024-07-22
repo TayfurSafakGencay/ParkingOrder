@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Data
 {
-  [CreateAssetMenu(fileName = "Level Data", menuName = "Create Level Data", order = 0)]
+  [CreateAssetMenu(fileName = "Level Data", menuName = "Create/Create Level Data", order = 0)]
   public class LevelData : ScriptableObject
   {
     public List<LevelVo> LevelVos;

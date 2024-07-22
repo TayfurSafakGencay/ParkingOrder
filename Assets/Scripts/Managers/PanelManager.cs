@@ -4,6 +4,7 @@ using DG.Tweening.Plugins.Options;
 using Enum;
 using UI;
 using UI.Reward;
+using UI.Shop;
 using UnityEngine;
 
 namespace Managers
@@ -19,6 +20,8 @@ namespace Managers
     public RewardPanel RewardPanel;
 
     public ChestOpeningPanel ChestOpeningPanel;
+
+    public ShopPanel ShopPanel;
 
     private void Awake()
     {
@@ -38,6 +41,11 @@ namespace Managers
       EndGamePanel.gameObject.SetActive(open);
       RewardPanel.gameObject.SetActive(open);
       ChestOpeningPanel.gameObject.SetActive(open);
+    }
+
+    public void OpenShop()
+    {
+      ShopPanel.gameObject.SetActive(true);
     }
 
     public TweenerCore<Vector3, Vector3, VectorOptions> PanelSlidingAnimationHorizontal(Transform panel, float initialXPosition, float lastXPosition, float time = SpecialTimeKey.PanelSliding)

@@ -8,6 +8,5 @@
     EndGameFail,
     Reward,
     ChestOpening,
-    Shop
   }
 }

@@ -34,7 +34,6 @@ namespace UI
     [SerializeField]
     private TextMeshProUGUI _powerUpText;
 
-    [FormerlySerializedAs("_title")]
     [SerializeField]
     private TextMeshProUGUI _titleText;
 
@@ -97,7 +96,7 @@ namespace UI
       }
 
       if (_lockedCars.Count > 1) return true;
-      
+
       ClosePanelWithoutReward();
       return false;
     }
@@ -105,15 +104,15 @@ namespace UI
     private async void OpenPanel()
     {
       if (!SetRewards()) return;
-      
+
       _background.color = new Color(1, 1, 1, 0);
       _chest.localScale = new Vector3(0, 0, 0);
-      
+
       _powerUpText.transform.localScale = new Vector3(0, 0, 0);
       _titleText.transform.localScale = new Vector3(0, 0, 0);
-      
+
       _topPiece.localRotation = Quaternion.Euler(0, 0, 0);
-      
+
       _chestLevel = 0;
       ChangeChestView();
 
@@ -157,19 +156,17 @@ namespace UI
       Sequence closingSequence = DOTween.Sequence();
 
       closingSequence.SetDelay(2f);
-      
+
       closingSequence.Append(_chest.DOShakeScale(2f, 15, 25, 20));
       closingSequence.Append(_topPiece.DORotate(new Vector3(0, 20, 0), 1f));
       closingSequence.Join(_chest.DOScale(new Vector3(150, 150, 150), 1f));
-      closingSequence.Append(_chest.DOScale(new Vector3(200, 200, 200), 1f)).SetEase(Ease.InCubic).OnComplete(() =>
-      {
-        _chest.gameObject.SetActive(false);
-      });
+      closingSequence.Append(_chest.DOScale(new Vector3(200, 200, 200), 1f)).SetEase(Ease.InCubic).OnComplete(() => { _chest.gameObject.SetActive(false); });
 
       return closingSequence;
     }
 
     private readonly List<MeshRenderer> _meshRenderers = new();
+
     private void ChangeChestView()
     {
       foreach (MeshRenderer meshRenderer in _meshRenderers)
@@ -197,10 +194,6 @@ namespace UI
     [SerializeField]
     private Transform _secondTargetForAnimation;
 
-    [Space(25)]
-    [SerializeField]
-    private List<RewardCar> _rewardCars;
-
     private readonly List<int> _lockedCars = new();
 
     private async void GetReward()
@@ -208,8 +201,8 @@ namespace UI
       int firstCarId = GetRandomCar(_lockedCars);
       _lockedCars.Remove(firstCarId);
       int secondCarId = GetRandomCar(_lockedCars);
-      
-      
+
+
       CarManager.Instance.UnlockedCar(firstCarId);
       CarManager.Instance.UnlockedCar(secondCarId);
 
@@ -218,9 +211,9 @@ namespace UI
 
       CarRotationAnimation(_firstCar);
       CarRotationAnimation(_secondCar);
-      
+
       await ChestClosingAnimation().AsyncWaitForCompletion();
-      
+
       PanelClosingAnimations();
     }
 
@@ -244,7 +237,7 @@ namespace UI
 
         _secondCar.transform.DOKill();
         Destroy(_secondCar);
-        
+
         gameObject.SetActive(false);
       });
     }
@@ -268,7 +261,9 @@ namespace UI
       Vector3 lastScale = new(150, 150, 150);
       Quaternion initialRotation = Quaternion.Euler(0, -70, 0);
 
-      GameObject car = Instantiate(_rewardCars[id].Car, _initialPositionFor3DAnimationObject.position, initialRotation, _background.transform);
+      GameObject carObjectUI = CarManager.Instance.GetCarData()[id].CarObjectUI;
+
+      GameObject car = Instantiate(carObjectUI, _initialPositionFor3DAnimationObject.position, initialRotation, _background.transform);
       car.transform.localScale = initialScale;
       car.transform.localRotation = initialRotation;
       carGameObject = car;

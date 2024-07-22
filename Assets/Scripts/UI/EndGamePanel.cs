@@ -116,7 +116,7 @@ namespace UI
 
     public void OnOpenShop()
     {
-      // TODO: Safak
+      PanelManager.Instance.OpenShop();
     }
 
     private void ClosePanel()
