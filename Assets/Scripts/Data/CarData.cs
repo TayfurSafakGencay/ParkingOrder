@@ -4,16 +4,18 @@ using UnityEngine;
 
 namespace Data
 {
-  [CreateAssetMenu(fileName = "Car Data", menuName = "Create Car Data", order = 0)]
+  [CreateAssetMenu(fileName = "Car Data", menuName = "Create/Create Car Data", order = 0)]
   public class CarData : ScriptableObject
   {
     public List<CarVo> CarFeatures;
   }
 
   [Serializable]
-  public struct CarVo
+  public class CarVo
   {
     public GameObject CarObject;
+
+    public GameObject CarObjectUI;
 
     [Range(3, 7)]
     public int Speed;
@@ -22,5 +24,9 @@ namespace Data
     public int Id;
 
     public bool Owned;
+
+    public int CoinPrice;
+
+    public int DiamondPrice;
   }
 }

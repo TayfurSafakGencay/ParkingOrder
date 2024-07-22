@@ -95,6 +95,8 @@ namespace Managers
     public void UnlockedCar(int id)
     {
       _ownedCarIds.Add(id);
+
+      _cars[id].Owned = true;
     }
 
     public List<int> GetUnlockedCars()
@@ -105,6 +107,11 @@ namespace Managers
     public List<int> GetCarsCount()
     {
       return _cars.Keys.ToList();
+    }
+
+    public Dictionary<int, CarVo> GetCarData()
+    {
+      return _cars;
     }
   }
 }

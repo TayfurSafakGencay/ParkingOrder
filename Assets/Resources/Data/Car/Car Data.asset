@@ -14,30 +14,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CarFeatures:
   - CarObject: {fileID: 6822936032774757128, guid: a977b79adbd63104ebcc2e1a7ec4f5ea, type: 3}
+    CarObjectUI: {fileID: 6822936032774757128, guid: fc7dce297cf9e0f4a8cac70dc3ee165c, type: 3}
     Speed: 3
     Id: 0
     Owned: 1
+    CoinPrice: 0
+    DiamondPrice: 0
   - CarObject: {fileID: 3779370193901622553, guid: 99ed6eb2e7b1b414ead63f4875b96554, type: 3}
+    CarObjectUI: {fileID: 3779370193901622553, guid: 0c8f6ade1033de04db1db6385d4cd86a, type: 3}
     Speed: 5
     Id: 1
     Owned: 0
+    CoinPrice: 50
+    DiamondPrice: 10
   - CarObject: {fileID: 2972568499147430222, guid: 75497e55a760e244ca9b985670e2e89e, type: 3}
+    CarObjectUI: {fileID: 2972568499147430222, guid: a8d8e78b9c0b48e40a13a36e9eeb80eb, type: 3}
     Speed: 4
     Id: 2
     Owned: 0
+    CoinPrice: 50
+    DiamondPrice: 10
   - CarObject: {fileID: 2680623345384376668, guid: d684a29bf9b8cfb428411ae0eaf30e2c, type: 3}
+    CarObjectUI: {fileID: 2680623345384376668, guid: c4d791180b4b400478acb656a216e00d, type: 3}
     Speed: 4
     Id: 3
     Owned: 0
+    CoinPrice: 100
+    DiamondPrice: 15
   - CarObject: {fileID: 4544459426609589257, guid: eef27746016a226448d1ec996bc402de, type: 3}
+    CarObjectUI: {fileID: 4544459426609589257, guid: c2780f100bf06a044b27c133eede3ea7, type: 3}
     Speed: 6
     Id: 4
     Owned: 0
+    CoinPrice: 150
+    DiamondPrice: 20
   - CarObject: {fileID: 8475465250975973676, guid: c9bdd13096ab90e47ade0c38ccb2d3c2, type: 3}
+    CarObjectUI: {fileID: 8475465250975973676, guid: b883a69043cba6e4fa773bf199069d92, type: 3}
     Speed: 7
     Id: 5
     Owned: 0
+    CoinPrice: 200
+    DiamondPrice: 25
   - CarObject: {fileID: 7634901384756540567, guid: b39b7c0588756f54e8921d90f1b89ca0, type: 3}
+    CarObjectUI: {fileID: 7634901384756540567, guid: 7c95633613773c14da73b19f049a24bf, type: 3}
     Speed: 7
     Id: 6
     Owned: 0
+    CoinPrice: 200
+    DiamondPrice: 25
