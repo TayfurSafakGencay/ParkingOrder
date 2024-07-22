@@ -44,6 +44,8 @@ namespace Managers
       if (GameStateKey != GameStateKey.InGame) return;
       
       OnGameStateChanged?.Invoke(success ? GameStateKey.EndGameSuccess : GameStateKey.EndGameFail);
+      
+      SoundManager.Instance.PlaySound(success ? SoundKey.Win : SoundKey.Fail);
     }
   }
 }

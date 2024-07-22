@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
@@ -68,10 +69,17 @@ namespace View
 
     private float _followSpeed;
 
-    public void Move()
+    public async void Move()
     {
       if (_isCarMoving) return;
 
+      _splineFollower.follow = false;
+      SoundManager.Instance.PlaySound(SoundKey.Car_Engine_Start);
+      transform.DOShakePosition(0.5f, new Vector3(0.025f,0, 0.025f), 25, 10);
+
+      await Task.Delay(250);
+      
+      _splineFollower.follow = true;
       LevelManager.Instance.Move();
 
       CarManager.Instance.CarMoved(_moveDetectId, gameObject);

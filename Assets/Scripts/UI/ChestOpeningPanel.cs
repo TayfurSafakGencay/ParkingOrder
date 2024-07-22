@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using DG.Tweening;
 using Enum;
 using Managers;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Sequence = DG.Tweening.Sequence;
 
@@ -72,11 +70,13 @@ namespace UI
 
         _powerUpText.transform.DOKill();
         _powerUpText.gameObject.SetActive(false);
-
+        
+        PlayChestSound();
         ChestOpeningAnimation();
         return;
       }
-
+      
+      PlayChestSound();
       ChestUpgradeAnimation();
       ChangeChestView();
     }
@@ -184,6 +184,39 @@ namespace UI
       gameObject.SetActive(true);
     }
 
+    private void PlayChestSound()
+    {
+      SoundKey soundKey;
+      switch (_chestLevel)
+      {
+        case 1:
+          soundKey = SoundKey.Chest_1;
+          break;
+        case 2:
+          soundKey = SoundKey.Chest_2;
+          break;
+        case 3:
+          soundKey = SoundKey.Chest_3;
+          break;
+        case 4:
+          soundKey = SoundKey.Chest_4;
+          break;
+        case 5:
+          soundKey = SoundKey.Chest_5;
+          break;
+        case 6:
+          soundKey = SoundKey.Chest_6;
+          break;
+        case 7:
+          soundKey = SoundKey.Chest_Opening;
+          break;
+        default:
+          return;
+      }
+      
+      SoundManager.Instance.PlaySound(soundKey);
+    }
+    
     [Header("3D Animation Positions")]
     [SerializeField]
     private Transform _initialPositionFor3DAnimationObject;
@@ -283,12 +316,5 @@ namespace UI
         .SetEase(Ease.Linear)
         .SetLoops(-1, LoopType.Incremental);
     }
-  }
-
-
-  [Serializable]
-  public class RewardCar
-  {
-    public GameObject Car;
   }
 }
