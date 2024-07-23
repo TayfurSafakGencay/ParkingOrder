@@ -22,3 +22,12 @@ MonoBehaviour:
   - Level: 2
     MovesCount: 6
     Time: 25
+  - Level: 3
+    MovesCount: 10
+    Time: 30
+  - Level: 4
+    MovesCount: 12
+    Time: 45
+  - Level: 5
+    MovesCount: 15
+    Time: 60

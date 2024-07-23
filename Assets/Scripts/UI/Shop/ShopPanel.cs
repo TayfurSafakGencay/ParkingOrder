@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Data;
@@ -94,6 +95,7 @@ namespace UI.Shop
       }, endValue, duration).OnComplete(() =>
       {
         DataManager.Instance.SaveInt(playerPrefKey, endValue);
+        ItemPurchased();
       });
     }
 
@@ -103,6 +105,12 @@ namespace UI.Shop
       
       scrollRect.horizontalNormalizedPosition = 1;
       scrollRect.DOHorizontalNormalizedPos(0f, animationTime).SetEase(Ease.InCubic);
+    }
+
+    public Action OnItemPurchased;
+    public void ItemPurchased()
+    {
+      OnItemPurchased?.Invoke();
     }
 
     #region Cars

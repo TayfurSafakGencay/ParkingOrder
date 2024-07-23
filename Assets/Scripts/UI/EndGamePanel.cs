@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using DG.Tweening;
+﻿using System.Threading.Tasks;
 using Enum;
 using Managers;
 using TMPro;
@@ -109,6 +107,11 @@ namespace UI
       _failPart.SetActive(true);
 
       _failPartLevelText.text = "Level " + _levelForEndGamePanel;
+
+      int newEnergy = DataManager.Instance.PlayerDataVo.Energy - 5;
+      DataManager.Instance.SaveInt(PlayerPrefKey.Energy, newEnergy);
+      
+      SetStatsPart();
     }
 
     public void OnReward()
@@ -133,13 +136,6 @@ namespace UI
     private void ClosePanel()
     {
       PanelManager.Instance.PanelSlidingAnimationHorizontal(transform, 0, Screen.width);
-    }
-
-    private void Animation(GameObject part)
-    {
-      part.transform.localScale = new Vector3(0, 0, 0);
-      part.SetActive(true);
-      part.transform.DOScale(new Vector3(1, 1, 1), 0.25f).SetEase(Ease.InQuart);
     }
 
     private void CloseBothPanel()

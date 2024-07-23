@@ -55,10 +55,10 @@ namespace Managers
     private async void OnGameFinishedSuccessfully()
     {
       await Task.Delay(SpecialTimeKey.WaitLevelData);
-      
-      DataManager.Instance.SaveInt(PlayerPrefKey.Level, Level++);
 
-      Level = DataManager.Instance.LoadInt(PlayerPrefKey.Level);
+      Level++;
+      
+      DataManager.Instance.SaveInt(PlayerPrefKey.Level, Level);
     }
 
     private async void OnGameStarted()

@@ -1,4 +1,5 @@
-﻿using Data;
+﻿using System;
+using Data;
 using Managers;
 using TMPro;
 using UnityEngine;
@@ -18,7 +19,12 @@ namespace UI.Shop
     private Image _image;
     
     private InGameProductVo _inGameProductVo;
-    
+
+    private void Awake()
+    {
+      PanelManager.Instance.ShopPanel.OnItemPurchased += UpdateUI;
+    }
+
     public void SetData(InGameProductVo inGameProductVo)
     {
       _inGameProductVo = inGameProductVo;

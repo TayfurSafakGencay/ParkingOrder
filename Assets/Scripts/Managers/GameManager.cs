@@ -18,6 +18,11 @@ namespace Managers
 
       OnGameStateChanged += GameStateChanged;
     }
+    
+    private void Start()
+    {
+      GameStart();
+    }
 
     private void GameStateChanged(GameStateKey newGameStateKey)
     {
@@ -27,11 +32,6 @@ namespace Managers
     public static void ChangeGameState(GameStateKey gameStateKey)
     {
       OnGameStateChanged?.Invoke(gameStateKey);
-    }
-
-    private void Start()
-    {
-      GameStart();
     }
 
     public void GameStart()

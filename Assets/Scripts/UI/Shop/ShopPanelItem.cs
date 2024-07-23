@@ -33,6 +33,11 @@ namespace UI.Shop
 
     private int _id;
 
+    private void Awake()
+    {
+      PanelManager.Instance.ShopPanel.OnItemPurchased += ButtonSettings;
+    }
+
     public void SetData(GameObject carObject, int coinPrice, int diamondPrice, bool owned, int id)
     {
       _carObject = carObject;
@@ -56,9 +61,18 @@ namespace UI.Shop
         _diamondImage.gameObject.SetActive(false);
       }
       
+      ButtonSettings();
+      
+      _diamondPriceText.text = _diamondReward.ToString();
+      
+      _titleText.text = "Model " + (_id + 1);
+    }
+
+    private void ButtonSettings()
+    {
       int coin = DataManager.Instance.LoadInt(PlayerPrefKey.Coin);
 
-      if (coin > _coinPrice)
+      if (coin >= _coinPrice)
       {
         _coinPriceText.text = $"<color=white>{_coinPrice}</color>";
         _buyButton.interactable = true;
@@ -68,10 +82,6 @@ namespace UI.Shop
         _coinPriceText.text = $"<color=red>{_coinPrice}</color>";
         _buyButton.interactable = false;
       }
-
-      _diamondPriceText.text = _diamondReward.ToString();
-      
-      _titleText.text = "Model " + (_id + 1);
     }
 
     private const float _rotationAnimationTime = 4f;

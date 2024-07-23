@@ -28,6 +28,8 @@ namespace UI.Reward
 
     private readonly Dictionary<int, RewardKey> _rewards = new();
 
+    private bool _isClickable;
+
     private void Awake()
     {
       GameManager.OnGameStateChanged += OnGameStateChanged;
@@ -48,7 +50,7 @@ namespace UI.Reward
     private void OpenPanel()
     {
       gameObject.SetActive(true);
-      _stopCandleAnimationButton.interactable = false;
+      _isClickable = false;
       _buttonRewardImage.DOFade(0, 0);
       
       SetMethods();
@@ -61,7 +63,7 @@ namespace UI.Reward
         _buttonRewardImage.DOFade(1, 0.25f);
 
         CandleAnimation();
-        _stopCandleAnimationButton.interactable = true;
+        _isClickable = true;
       });
     }
 
@@ -108,9 +110,7 @@ namespace UI.Reward
     [Space(10)]
     [SerializeField]
     private Image _buttonRewardImage;
-
-    [SerializeField]
-    private Button _stopCandleAnimationButton;
+    
     private void ButtonImageChanger()
     {
       Vector3 rotation = _candle.transform.localRotation.eulerAngles;
@@ -130,7 +130,9 @@ namespace UI.Reward
 
     public async void OnStopCandleAnimation()
     {
-      _stopCandleAnimationButton.interactable = false;
+      if (!_isClickable) return;
+      
+      _isClickable = false;
       _candleAnimation.Kill();
 
       await Task.Delay(SpecialTimeKey.WaitStopCandle);

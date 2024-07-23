@@ -24,6 +24,11 @@ namespace UI.Shop
     private float _price { get; set; }
 
     private int _amount { get; set; }
+    
+    private void Awake()
+    {
+      PanelManager.Instance.ShopPanel.OnItemPurchased += SetUI;
+    }
 
     public void SetData(float price, int amount, Sprite sprite)
     {
