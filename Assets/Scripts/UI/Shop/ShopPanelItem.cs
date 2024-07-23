@@ -3,7 +3,6 @@ using Managers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Sequence = Unity.VisualScripting.Sequence;
 
 namespace UI.Shop
 {
@@ -100,11 +99,16 @@ namespace UI.Shop
       
       SetUI();
 
-      DG.Tweening.Sequence carBuySequence = DOTween.Sequence();
-
+      Sequence carBuySequence = DOTween.Sequence();
+      
       carBuySequence.Append(_car3D.transform.DOScale(225, 1f).SetEase(Ease.InCubic));
+      carBuySequence.Append(_car3D.transform.DOLocalMoveZ(-300, 1f).SetEase(Ease.InCubic));
       carBuySequence.AppendInterval(2f);
-      carBuySequence.Append(_car3D.transform.DOScale(150, 1f).SetEase(Ease.InCubic));
+      
+      carBuySequence.Append(_car3D.transform.DOScale(125, 1f).SetEase(Ease.InCubic)).OnComplete(() =>
+      {
+        _car3D.transform.localPosition = new Vector3(0, 15, -200);
+      });
     }
 
     private void OnDisable()

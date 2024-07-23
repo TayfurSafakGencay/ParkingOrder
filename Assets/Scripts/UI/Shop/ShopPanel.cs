@@ -34,11 +34,6 @@ namespace UI.Shop
     [SerializeField]
     private Transform _diamondImage;
 
-    private void Awake()
-    {
-      gameObject.SetActive(false);
-    }
-
     private void OnEnable()
     {
       OpenPanel();
@@ -46,7 +41,7 @@ namespace UI.Shop
 
     public void ClosePanel()
     {
-      gameObject.SetActive(false);
+      PanelManager.Instance.CloseShop();
 
       DestroyItems();
     }
@@ -96,9 +91,10 @@ namespace UI.Shop
       {
         value = x;
         text.text = value.ToString();
-      }, endValue, duration);
-      
-      DataManager.Instance.SaveInt(playerPrefKey, endValue);
+      }, endValue, duration).OnComplete(() =>
+      {
+        DataManager.Instance.SaveInt(playerPrefKey, endValue);
+      });
     }
 
     private async void ScrollRectAnimation(ScrollRect scrollRect, float animationTime = 0, int delay = 5)

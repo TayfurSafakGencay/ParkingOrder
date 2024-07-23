@@ -42,6 +42,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: ChestOpening
+  - name: InnerGamePanel
+    uniqueID: 1230595899
+    locked: 0
+  - name: EndGamePanel
+    uniqueID: 1514990343
+    locked: 0
+  - name: RewardPanel
+    uniqueID: 3164681837
+    locked: 0
+  - name: ShopPanel
+    uniqueID: 1574868287
+    locked: 0
+  - name: ChestOpeningPanel
     uniqueID: 2748442697
     locked: 0

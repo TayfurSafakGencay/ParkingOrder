@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using DG.Tweening;
 using Enum;
 using Managers;
@@ -37,6 +38,16 @@ namespace UI
     private void Awake()
     {
       GameManager.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnEnable()
+    {
+      if (DataManager.Instance == null)
+      {
+        return;
+      }
+      
+      SetStatsPart();
     }
 
     private void OnGameStateChanged(GameStateKey gameStateKey)

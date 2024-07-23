@@ -142,6 +142,7 @@ namespace View
 
     private void OnGameFinishedSuccessfully()
     {
+      ParticleManager.Instance.PlayParticleEffect(transform.position, VFX.Win_For_Car, 1);
       transform.DOShakeScale(SpecialTimeKey.CarDestroyForSuccessful, 0.5f, 12, 10).OnComplete(() => { Destroy(gameObject); });
     }
 

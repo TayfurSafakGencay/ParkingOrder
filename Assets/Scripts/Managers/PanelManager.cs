@@ -46,6 +46,15 @@ namespace Managers
     public void OpenShop()
     {
       ShopPanel.gameObject.SetActive(true);
+      
+      EndGamePanel.gameObject.SetActive(false);
+    }
+
+    public void CloseShop()
+    {
+      ShopPanel.gameObject.SetActive(false);
+      
+      EndGamePanel.gameObject.SetActive(true);
     }
 
     public TweenerCore<Vector3, Vector3, VectorOptions> PanelSlidingAnimationHorizontal(Transform panel, float initialXPosition, float lastXPosition, float time = SpecialTimeKey.PanelSliding)
